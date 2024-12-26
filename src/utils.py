@@ -28,6 +28,8 @@ def evaluate_models(X_train,y_train,X_test,y_test,models):
         for i in range(len(list(models))):
             model=list(models.values())[i]
 
+            # params=params[list(models.keys())[i]]
+
             model.fit(X_train,y_train) #Train Model
 
             y_train_pred=model.predict(X_train)
